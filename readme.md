@@ -26,4 +26,10 @@ Output will be:
 ```
 /user/student/sakila/actor/part-m-0000
 /user/student/sakila/actor.csv
+
+```
+#EXPORT THE DATA
+
+```
+sqoop export --connect jdbc:mysql://172.17.0.2:3306/airline --username student --password password --table carrier --export-dir /user/student/airline/carriers.csv -m 1
 ```
